@@ -1,13 +1,13 @@
 var cacheName = 'GWT-PWA';  
 var filesToCache = [  
-                     '/gwt-pwa/pwademo.html',  
-                     '/gwt-pwa/pwademo.css',  
-                     '/gwt-pwa/styles/app-theme.html',  
-                     '/gwt-pwa/styles/shared-styles.html',  
-                     '/gwt-pwa/leaflet/leaflet.js',  
-                     '/gwt-pwa/leaflet/leaflet.css',
-                     '/gwt-pwa/image/mapicon.png',
-                      '/gwt-pwa/pwademo/pwademo.nocache.js'];
+                     '/pwademo.html',  
+                     '/pwademo.css',  
+                     '/styles/app-theme.html',  
+                     '/styles/shared-styles.html',  
+                     '/leaflet/leaflet.js',  
+                     '/leaflet/leaflet.css',
+                     '/image/mapicon.png',
+                      '/pwademo/pwademo.nocache.js'];
 
 self.addEventListener('install', function(e) {  
   console.log('[ServiceWorker] Install');  
