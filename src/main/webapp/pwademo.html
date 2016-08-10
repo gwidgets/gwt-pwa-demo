@@ -1,0 +1,109 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="pwademo.css">
+
+    <title>GWT progressive web app demo</title>
+
+	  <script src="pwademo/bower_components/webcomponentsjs/webcomponents.js"></script>
+	  <!-- Comment out the dev-imports if working in production  -->
+	  <link rel="manifest" href="manifest.json">
+	 <link rel="import" href="dev-imports.html"> 
+	<link rel="import" href="styles/app-theme.html">
+	<link rel="import" href="styles/shared-styles.html">
+	<link rel="stylesheet" href="leaflet/leaflet.css" />
+     <script src="leaflet/leaflet.js"></script> 
+    <script type="text/javascript" language="javascript" src="pwademo/pwademo.nocache.js" async></script>
+  </head>
+
+  <body>
+    <noscript>
+      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Your web browser must have JavaScript enabled
+        in order for this application to display correctly.
+      </div>
+    </noscript>
+    
+     <div>
+
+    <paper-drawer-panel id="paperDrawerPanel">
+      <!-- Drawer Scroll Header Panel -->
+      <paper-scroll-header-panel drawer="" fixed=""> 
+      
+        <!-- Drawer Toolbar -->
+        <paper-toolbar id="drawerToolbar">
+          <span class="menu-name">Maps</span>
+        </paper-toolbar>
+
+        <!-- Drawer Content -->
+        <paper-menu attr-for-selected="data-route" selected="home" id="paperMenu">
+          <a data-route="paris" class="link" id="parisLink">
+            <iron-icon icon="maps:local-cafe"></iron-icon>
+            <span>Paris</span>
+          </a>
+
+          <a data-route="berlin" class="link" id="berlinLink">
+            <iron-icon icon="maps:directions-bike"></iron-icon>
+            <span>Berlin</span>
+          </a>
+
+          <a data-route="london" class="link" id="londonLink">
+            <iron-icon icon="maps:local-dining"></iron-icon>
+            <span>London</span>
+          </a>
+          
+        </paper-menu>
+      </paper-scroll-header-panel>
+
+      <!-- Main Area -->
+       <paper-scroll-header-panel main="" id="headerPanelMain" fixed="">
+   
+        <!-- Main Toolbar -->
+        <paper-toolbar id="mainToolbar">
+           <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle=""></paper-icon-button> 
+          
+
+          <span class="space"></span>
+
+          <!-- Toolbar icons -->
+          <paper-icon-button icon="refresh"></paper-icon-button>
+          <paper-icon-button icon="search"></paper-icon-button>
+
+          <!-- Application name -->
+          <div class="middle middle-container">
+            <div class="app-name">My Favorite Maps</div>
+          </div>
+        </paper-toolbar>
+
+        <!-- Main Content -->
+        <div class="content">
+          <iron-pages attr-for-selected="data-route" selected="berlin" id="ironPages">
+            <section  data-route="berlin" class="section">
+              <paper-material elevation="1">
+                <div id="berlinMap" class="mapContainer"></div>
+              </paper-material>
+            </section>
+            
+            <section  data-route="paris" class="section">
+              <paper-material elevation="1">
+                <div id="parisMap" class="mapContainer"></div>
+              </paper-material>
+            </section>
+            
+             <section  data-route="london" class="section">
+              <paper-material elevation="1">
+               <div id="londonMap" class="mapContainer"></div>
+              </paper-material>
+            </section>
+          </iron-pages>
+        </div>
+      </paper-scroll-header-panel>
+    </paper-drawer-panel>
+
+	
+	</div>
+    
+    
+  </body>
+</html>
