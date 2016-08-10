@@ -3,6 +3,8 @@ package com.gwidgets.ui;
 import com.google.gwt.core.client.GWT;
 import com.gwidgets.api.leaflet.L;
 import com.gwidgets.api.leaflet.Map;
+import com.gwidgets.api.leaflet.options.ZoomOptions;
+import com.gwidgets.api.leaflet.options.ZoomPanOptions;
 
 public class Maps {
 
@@ -19,10 +21,14 @@ public class Maps {
 	}
 
 	public static void initializeParisMap() {
+		
+		
 
 		Map paris = L.map("parisMap", null);
 		
+		
 		L.tileLayer(MAP_URL, null).addTo(paris);
+		
 		paris.setView(L.latLng(48.876905, 2.376050), 12, null);
 
 

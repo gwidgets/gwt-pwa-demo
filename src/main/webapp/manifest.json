@@ -5,7 +5,13 @@
         "src": "image/mapicon.png",
         "sizes": "144x144",
         "type": "image/png"
-      }],
+      },
+      {
+        "src": "image/splash.png",
+        "sizes": "348x348",
+        "type": "image/png"
+      }
+      ],
   "start_url": "/pwademo.html",
   "display": "standalone",
   "background_color": "#3E4EB8",
