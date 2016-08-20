@@ -35,7 +35,7 @@ public class PwaDemo implements EntryPoint {
 		historyHandler.handleCurrentHistory();
 
 		if (Navigator.serviceWorker != null) {
-			Navigator.serviceWorker.register("service-worker/sw.js")
+			Navigator.serviceWorker.register("sw.js")
 					.then(new Function<JavaScriptObject, JavaScriptObject>() {
 						@Override
 						public JavaScriptObject call(JavaScriptObject arg) {
