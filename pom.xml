@@ -36,8 +36,8 @@
 	</pluginRepositories>
 
 	<properties>
-		<gwtVersion>2.8.0-rc1</gwtVersion>
-		<gwtPolymerVersion>1.2.3.0</gwtPolymerVersion>
+		<gwtVersion>2.8.0</gwtVersion>
+		<gwtPolymerVersion>1.7.0.0</gwtPolymerVersion>
 		<war>${project.build.directory}</war>
 		<webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
 		<maven.compiler.source>1.8</maven.compiler.source>
