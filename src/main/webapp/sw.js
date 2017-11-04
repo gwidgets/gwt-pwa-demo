@@ -23,11 +23,7 @@ var filesToCache = [ 'pwademo.html',
                      'leaflet/leaflet.js',  
                      'leaflet/leaflet.css',
                      'image/mapicon.png',
-                      'pwademo/pwademo.nocache.js',
-                      'pwademo/1A07221213A47D5F8369817C9ECDDAE7.cache.js',
-                       'pwademo/deferredjs/1A07221213A47D5F8369817C9ECDDAE7/1.cache.js',
-                       'pwademo/deferredjs/1A07221213A47D5F8369817C9ECDDAE7/2.cache.js',
-                       'pwademo/deferredjs/1A07221213A47D5F8369817C9ECDDAE7/3.cache.js'];
+                      'pwademo/pwademo.nocache.js'];
 
 self.addEventListener('install', function(e) {  
   console.log('[ServiceWorker] Install');  
