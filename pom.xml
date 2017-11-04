@@ -22,19 +22,6 @@
 		</repository>
 	</repositories>
 
-	<pluginRepositories>
-		<pluginRepository>
-			<id>sonatype-snapshots</id>
-			<url>http://oss.sonatype.org/content/repositories/snapshots</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-		</pluginRepository>
-	</pluginRepositories>
-
 	<properties>
 		<gwtVersion>2.8.2</gwtVersion>
 		<gwtPolymerVersion>1.7.0.0</gwtPolymerVersion>
@@ -67,7 +54,7 @@
 		<dependency>
 			<groupId>com.gwidgets</groupId>
 			<artifactId>gwty-leaflet</artifactId>
-			<version>0.3-SNAPSHOT</version>
+			<version>0.5</version>
 		</dependency>
 	</dependencies>
 
