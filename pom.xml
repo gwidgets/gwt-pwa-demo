@@ -51,10 +51,11 @@
 			<version>${gwtPolymerVersion}</version>
 			<scope>provided</scope>
 		</dependency>
-		<dependency>
+			<dependency>
 			<groupId>com.gwidgets</groupId>
 			<artifactId>gwty-leaflet</artifactId>
-			<version>0.5</version>
+			<version>1.0-SNAPSHOT</version>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 
