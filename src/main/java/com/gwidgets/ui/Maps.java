@@ -1,10 +1,7 @@
 package com.gwidgets.ui;
 
-import com.google.gwt.core.client.GWT;
 import com.gwidgets.api.leaflet.L;
 import com.gwidgets.api.leaflet.Map;
-import com.gwidgets.api.leaflet.options.ZoomOptions;
-import com.gwidgets.api.leaflet.options.ZoomPanOptions;
 
 public class Maps {
 

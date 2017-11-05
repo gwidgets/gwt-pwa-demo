@@ -4,8 +4,6 @@ import com.google.gwt.dom.client.AnchorElement;
 import com.google.gwt.dom.client.Document;
 import com.google.gwt.place.shared.PlaceController;
 import com.google.gwt.user.client.Event;
-import com.google.gwt.user.client.History;
-import com.gwidgets.client.ClientFactory;
 import com.gwidgets.places.ParisPlace;
 import com.gwidgets.places.BerlinPlace;
 import com.gwidgets.places.LondonPlace;
