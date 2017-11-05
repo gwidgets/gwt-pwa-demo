@@ -1,0 +1,23 @@
+{
+  "name": "gwt-pwa",
+  "version": "0.0.1",
+  "description": "generates service worker for GWT app",
+  "main": "serviceWorkerBuilder.js",
+  "dependencies": {
+    "handlebars": "^4.0.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zak905/gwt-pwa-demo.git"
+  },
+  "author": "zakaria amine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zak905/gwt-pwa-demo/issues"
+  },
+  "homepage": "https://github.com/zak905/gwt-pwa-demo#readme"
+}
